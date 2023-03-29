@@ -160,381 +160,426 @@
   <!-- MAIN -->
   <main>
 
-    <section class="container-filters">
-      <article class="select">
-        <select>
-          <option value="">Selecciona tu Marca:</option>
-          <option value="option-CH">Carolina Herrera</option>
-          <option value="option-DG">Dolce & Gabbana</option>
-          <option value="option-HB">Hugo Boss</option>
-          <option value="option-DI">Dior</option>
-          <option value="option-JPG">Jean Paul Gaultier</option>
 
-        </select>
-      </article>
-    </section>
-    <section class="container-products-sale">
-      <article class="products-sale">
-        <div class="product-image-hb-h">
-          <img class="CH" src="./assets/HB_hombre_top_1.jpg" alt="perfume-hombre">
-        </div>
-        <div class="product-text-description">
-          <div class="product-preview-icon">
-            <h4>Hugo Boss</h4>
-            <span><i class="fa-sharp fa-regular fa-heart"></i></span>
+    <div class="container-columns">
+      <section class="container-filters">
+
+        <fieldset class="container-form">
+          <legend>FILTROS</legend>
+
+          <span class="title-container-filters">&nbsp&nbspMarca&nbsp&nbsp</span>
+          <br>
+          <section>
+            <article>
+              <select class="select-options">
+                <option value="">Seleccione una marca:</option>
+                <option value="CH">Carolina Herrera</option>
+                <option value="DI">Dior</option>
+                <option value="DG">Dolce & Gabbana</option>
+                <option value="HB">Hugo Boss</option>
+                <option value="JPG">Jean Paul Gaultier</option>
+              </select>
+            </article>
+            <br>
+            <span class="title-container-filters">&nbsp&nbspPrecio&nbsp&nbsp</span>
+            <br>
+            <article class="price-input">
+              <div class="field">
+                <span>Min</span>
+                <input type="number" class="input-min" value="2500">
+              </div>
+              <div class="separator">-</div>
+              <div class="field">
+                <span>Max</span>
+                <input type="number" class="input-max" value="7500">
+              </div>
+
+            </article>
+            <div class="slider">
+              <div class="progress"></div>
+            </div>
+            <div class="range-input">
+              <input type="range" class="range-min" min="0" max="10000" value="2500" step="100">
+              <input type="range" class="range-max" min="0" max="10000" value="7500" step="100">
+            </div>
+
+          </section>
+      </section>
+
+
+
+
+      </fieldset>
+
+
+
+
+
+
+
+      <section class="container-products-sale">
+        <article class="products-sale">
+          <div class="product-image-hb-h">
+            <img class="CH" src="./assets/HB_hombre_top_1.jpg" alt="perfume-hombre">
           </div>
-          <div class="product-preview-description">
-            <h3>Eau de Parfum Bottled Parfum 50 ml</h3>
+          <div class="product-text-description">
+            <div class="product-preview-icon">
+              <h4>Hugo Boss</h4>
+              <span><i class="fa-sharp fa-regular fa-heart"></i></span>
+            </div>
+            <div class="product-preview-description">
+              <h3>Eau de Parfum Bottled Parfum 50 ml</h3>
+            </div>
+            <div class="product-preview-price">
+              <p>49,95€</p>
+              <span class="material-symbols-outlined">
+                shopping_bag
+              </span>
+            </div>
+            <div class="product-preview-star">
+              <span><i class="fa-sharp fa-solid fa-star"></i>
+              </span>
+              <span><i class="fa-sharp fa-solid fa-star"></i>
+              </span>
+              <span><i class="fa-sharp fa-solid fa-star"></i>
+              </span>
+              <span><i class="fa-sharp fa-solid fa-star-half-stroke"></i></span>
+              <span><i class="fa-regular fa-star"></i></span>
+            </div>
           </div>
-          <div class="product-preview-price">
-            <p>49,95€</p>
-            <span class="material-symbols-outlined">
-              shopping_bag
-            </span>
+        </article>
+        <article class="products-sale">
+          <div class="product-image-hb-h">
+            <img class="CH" src="./assets/DI_hombre_top_3.jpg" alt="perfume-hombre">
           </div>
-          <div class="product-preview-star">
-            <span><i class="fa-sharp fa-solid fa-star"></i>
-            </span>
-            <span><i class="fa-sharp fa-solid fa-star"></i>
-            </span>
-            <span><i class="fa-sharp fa-solid fa-star"></i>
-            </span>
-            <span><i class="fa-sharp fa-solid fa-star-half-stroke"></i></span>
-            <span><i class="fa-regular fa-star"></i></span>
+          <div class="product-text-description">
+            <div class="product-preview-icon">
+              <h4>Dior Sauvage</h4>
+              <span><i class="fa-sharp fa-regular fa-heart"></i></span>
+            </div>
+            <div class="product-preview-description">
+              <h3>Eau de Parfum Bottled Parfum 100 ml</h3>
+            </div>
+            <div class="product-preview-price">
+              <p>78,00€</p>
+              <span class="material-symbols-outlined">
+                shopping_bag
+              </span>
+            </div>
+            <div class="product-preview-star">
+              <span><i class="fa-sharp fa-solid fa-star"></i>
+              </span>
+              <span><i class="fa-sharp fa-solid fa-star"></i>
+              </span>
+              <span><i class="fa-sharp fa-solid fa-star"></i>
+              </span>
+              <span><i class="fa-sharp fa-solid fa-star-half-stroke"></i></span>
+              <span><i class="fa-regular fa-star"></i></span>
+            </div>
           </div>
-        </div>
-      </article>
-      <article class="products-sale">
-        <div class="product-image-hb-h">
-          <img class="CH" src="./assets/DI_hombre_top_3.jpg" alt="perfume-hombre">
-        </div>
-        <div class="product-text-description">
-          <div class="product-preview-icon">
-            <h4>Dior Sauvage</h4>
-            <span><i class="fa-sharp fa-regular fa-heart"></i></span>
+        </article>
+        <article class="products-sale">
+          <div class="product-image-hb-h">
+            <img class="CH" src="./assets/DG_hombre_top_2.jpg" alt="perfume-hombre">
           </div>
-          <div class="product-preview-description">
-            <h3>Eau de Parfum Bottled Parfum 100 ml</h3>
+          <div class="product-text-description">
+            <div class="product-preview-icon">
+              <h4>D&G King</h4>
+              <span><i class="fa-sharp fa-regular fa-heart"></i></span>
+            </div>
+            <div class="product-preview-description">
+              <h3>Eau de Parfum Bottled Parfum 50 ml</h3>
+            </div>
+            <div class="product-preview-price">
+              <p>66,00€</p>
+              <span class="material-symbols-outlined">
+                shopping_bag
+              </span>
+            </div>
+            <div class="product-preview-star">
+              <span><i class="fa-sharp fa-solid fa-star"></i>
+              </span>
+              <span><i class="fa-sharp fa-solid fa-star"></i>
+              </span>
+              <span><i class="fa-sharp fa-solid fa-star"></i>
+              </span>
+              <span><i class="fa-sharp fa-solid fa-star-half-stroke"></i></span>
+              <span><i class="fa-regular fa-star"></i></span>
+            </div>
           </div>
-          <div class="product-preview-price">
-            <p>78,00€</p>
-            <span class="material-symbols-outlined">
-              shopping_bag
-            </span>
+        </article>
+        <article class="products-sale">
+          <div class="product-image-hb-h">
+            <img class="CH" src="./assets/DI_mujer_top_3.jpg" alt="perfume-mujer">
           </div>
-          <div class="product-preview-star">
-            <span><i class="fa-sharp fa-solid fa-star"></i>
-            </span>
-            <span><i class="fa-sharp fa-solid fa-star"></i>
-            </span>
-            <span><i class="fa-sharp fa-solid fa-star"></i>
-            </span>
-            <span><i class="fa-sharp fa-solid fa-star-half-stroke"></i></span>
-            <span><i class="fa-regular fa-star"></i></span>
+          <div class="product-text-description">
+            <div class="product-preview-icon">
+              <h4>Dior Joy</h4>
+              <span><i class="fa-sharp fa-regular fa-heart"></i></span>
+            </div>
+            <div class="product-preview-description">
+              <h3>Eau de Parfum Bottled Parfum 100 ml</h3>
+            </div>
+            <div class="product-preview-price">
+              <p>80,60€</p>
+              <span class="material-symbols-outlined">
+                shopping_bag
+              </span>
+            </div>
+            <div class="product-preview-star">
+              <span><i class="fa-sharp fa-solid fa-star"></i>
+              </span>
+              <span><i class="fa-sharp fa-solid fa-star"></i>
+              </span>
+              <span><i class="fa-sharp fa-solid fa-star"></i>
+              </span>
+              <span><i class="fa-sharp fa-solid fa-star-half-stroke"></i></span>
+              <span><i class="fa-regular fa-star"></i></span>
+            </div>
           </div>
-        </div>
-      </article>
-      <article class="products-sale">
-        <div class="product-image-hb-h">
-          <img class="CH" src="./assets/DG_hombre_top_2.jpg" alt="perfume-hombre">
-        </div>
-        <div class="product-text-description">
-          <div class="product-preview-icon">
-            <h4>D&G King</h4>
-            <span><i class="fa-sharp fa-regular fa-heart"></i></span>
+        </article>
+        <article class="products-sale">
+          <div class="product-image-hb-h">
+            <img class="CH" src="./assets/DG_mujer_top_1.jpg" alt="perfume-mujer">
           </div>
-          <div class="product-preview-description">
-            <h3>Eau de Parfum Bottled Parfum 50 ml</h3>
+          <div class="product-text-description">
+            <div class="product-preview-icon">
+              <h4>D&G The One</h4>
+              <span><i class="fa-sharp fa-regular fa-heart"></i></span>
+            </div>
+            <div class="product-preview-description">
+              <h3>Eau de Parfum Bottled Parfum 50 ml</h3>
+            </div>
+            <div class="product-preview-price">
+              <p>68,90€</p>
+              <span class="material-symbols-outlined">
+                shopping_bag
+              </span>
+            </div>
+            <div class="product-preview-star">
+              <span><i class="fa-sharp fa-solid fa-star"></i>
+              </span>
+              <span><i class="fa-sharp fa-solid fa-star"></i>
+              </span>
+              <span><i class="fa-sharp fa-solid fa-star"></i>
+              </span>
+              <span><i class="fa-sharp fa-solid fa-star-half-stroke"></i></span>
+              <span><i class="fa-regular fa-star"></i></span>
+            </div>
           </div>
-          <div class="product-preview-price">
-            <p>66,00€</p>
-            <span class="material-symbols-outlined">
-              shopping_bag
-            </span>
+        </article>
+        <article class="products-sale">
+          <div class="product-image-hb-h">
+            <img class="CH" src="./assets/HB_mujer_top_3.jpg" alt="perfume-mujer">
           </div>
-          <div class="product-preview-star">
-            <span><i class="fa-sharp fa-solid fa-star"></i>
-            </span>
-            <span><i class="fa-sharp fa-solid fa-star"></i>
-            </span>
-            <span><i class="fa-sharp fa-solid fa-star"></i>
-            </span>
-            <span><i class="fa-sharp fa-solid fa-star-half-stroke"></i></span>
-            <span><i class="fa-regular fa-star"></i></span>
+          <div class="product-text-description">
+            <div class="product-preview-icon">
+              <h4>Hugo Boss Scent</h4>
+              <span><i class="fa-sharp fa-regular fa-heart"></i></span>
+            </div>
+            <div class="product-preview-description">
+              <h3>Eau de Parfum Bottled Parfum 100 ml</h3>
+            </div>
+            <div class="product-preview-price">
+              <p>69,95€</p>
+              <span class="material-symbols-outlined">
+                shopping_bag
+              </span>
+            </div>
+            <div class="product-preview-star">
+              <span><i class="fa-sharp fa-solid fa-star"></i>
+              </span>
+              <span><i class="fa-sharp fa-solid fa-star"></i>
+              </span>
+              <span><i class="fa-sharp fa-solid fa-star"></i>
+              </span>
+              <span><i class="fa-sharp fa-solid fa-star-half-stroke"></i></span>
+              <span><i class="fa-regular fa-star"></i></span>
+            </div>
           </div>
-        </div>
-      </article>
-      <article class="products-sale">
-        <div class="product-image-hb-h">
-          <img class="CH" src="./assets/DI_mujer_top_3.jpg" alt="perfume-mujer">
-        </div>
-        <div class="product-text-description">
-          <div class="product-preview-icon">
-            <h4>Dior Joy</h4>
-            <span><i class="fa-sharp fa-regular fa-heart"></i></span>
+        </article>
+        <article class="products-sale">
+          <div class="product-image-hb-h">
+            <img class="CH" src="./assets/DG_mujer_top_2.jpg" alt="perfume-mujer">
           </div>
-          <div class="product-preview-description">
-            <h3>Eau de Parfum Bottled Parfum 100 ml</h3>
+          <div class="product-text-description">
+            <div class="product-preview-icon">
+              <h4>D&G Queen</h4>
+              <span><i class="fa-sharp fa-regular fa-heart"></i></span>
+            </div>
+            <div class="product-preview-description">
+              <h3>Eau de Parfum Bottled Parfum 30 ml</h3>
+            </div>
+            <div class="product-preview-price">
+              <p>57,00€</p>
+              <span class="material-symbols-outlined">
+                shopping_bag
+              </span>
+            </div>
+            <div class="product-preview-star">
+              <span><i class="fa-sharp fa-solid fa-star"></i>
+              </span>
+              <span><i class="fa-sharp fa-solid fa-star"></i>
+              </span>
+              <span><i class="fa-sharp fa-solid fa-star"></i>
+              </span>
+              <span><i class="fa-sharp fa-solid fa-star-half-stroke"></i></span>
+              <span><i class="fa-regular fa-star"></i></span>
+            </div>
           </div>
-          <div class="product-preview-price">
-            <p>80,60€</p>
-            <span class="material-symbols-outlined">
-              shopping_bag
-            </span>
+        </article>
+        <article class="products-sale">
+          <div class="product-image-hb-h">
+            <img class="CH" src="./assets/CH_mujer_top.jpg" alt="perfume-mujer">
           </div>
-          <div class="product-preview-star">
-            <span><i class="fa-sharp fa-solid fa-star"></i>
-            </span>
-            <span><i class="fa-sharp fa-solid fa-star"></i>
-            </span>
-            <span><i class="fa-sharp fa-solid fa-star"></i>
-            </span>
-            <span><i class="fa-sharp fa-solid fa-star-half-stroke"></i></span>
-            <span><i class="fa-regular fa-star"></i></span>
+          <div class="product-text-description">
+            <div class="product-preview-icon">
+              <h4>CH Very Good Girl</h4>
+              <span><i class="fa-sharp fa-regular fa-heart"></i></span>
+            </div>
+            <div class="product-preview-description">
+              <h3>Eau de Parfum Bottled Parfum 80 ml</h3>
+            </div>
+            <div class="product-preview-price">
+              <p>98,95€</p>
+              <span class="material-symbols-outlined">
+                shopping_bag
+              </span>
+            </div>
+            <div class="product-preview-star">
+              <span><i class="fa-sharp fa-solid fa-star"></i>
+              </span>
+              <span><i class="fa-sharp fa-solid fa-star"></i>
+              </span>
+              <span><i class="fa-sharp fa-solid fa-star"></i>
+              </span>
+              <span><i class="fa-sharp fa-solid fa-star-half-stroke"></i></span>
+              <span><i class="fa-regular fa-star"></i></span>
+            </div>
           </div>
-        </div>
-      </article>
-      <article class="products-sale">
-        <div class="product-image-hb-h">
-          <img class="CH" src="./assets/DG_mujer_top_1.jpg" alt="perfume-mujer">
-        </div>
-        <div class="product-text-description">
-          <div class="product-preview-icon">
-            <h4>D&G The One</h4>
-            <span><i class="fa-sharp fa-regular fa-heart"></i></span>
+        </article>
+        <article class="products-sale">
+          <div class="product-image-hb-h">
+            <img class="CH" src="./assets/JPG_mujer.jpg" alt="perfume-mujer">
           </div>
-          <div class="product-preview-description">
-            <h3>Eau de Parfum Bottled Parfum 50 ml</h3>
+          <div class="product-text-description">
+            <div class="product-preview-icon">
+              <h4>JP Gaultier Scandal</h4>
+              <span><i class="fa-sharp fa-regular fa-heart"></i></span>
+            </div>
+            <div class="product-preview-description">
+              <h3>Eau de Parfum Bottled Parfum 100 ml</h3>
+            </div>
+            <div class="product-preview-price">
+              <p>67,95€</p>
+              <span class="material-symbols-outlined">
+                shopping_bag
+              </span>
+            </div>
+            <div class="product-preview-star">
+              <span><i class="fa-sharp fa-solid fa-star"></i>
+              </span>
+              <span><i class="fa-sharp fa-solid fa-star"></i>
+              </span>
+              <span><i class="fa-sharp fa-solid fa-star"></i>
+              </span>
+              <span><i class="fa-sharp fa-solid fa-star-half-stroke"></i></span>
+              <span><i class="fa-regular fa-star"></i></span>
+            </div>
           </div>
-          <div class="product-preview-price">
-            <p>68,90€</p>
-            <span class="material-symbols-outlined">
-              shopping_bag
-            </span>
+        </article>
+        <article class="products-sale">
+          <div class="product-image-hb-h">
+            <img class="CH" src="./assets/CH_hombre_top_3.jpg" alt="perfume-hombre">
           </div>
-          <div class="product-preview-star">
-            <span><i class="fa-sharp fa-solid fa-star"></i>
-            </span>
-            <span><i class="fa-sharp fa-solid fa-star"></i>
-            </span>
-            <span><i class="fa-sharp fa-solid fa-star"></i>
-            </span>
-            <span><i class="fa-sharp fa-solid fa-star-half-stroke"></i></span>
-            <span><i class="fa-regular fa-star"></i></span>
+          <div class="product-text-description">
+            <div class="product-preview-icon">
+              <h4>CH 212 VIP Black</h4>
+              <span><i class="fa-sharp fa-regular fa-heart"></i></span>
+            </div>
+            <div class="product-preview-description">
+              <h3>Eau de Parfum Bottled Parfum 100 ml</h3>
+            </div>
+            <div class="product-preview-price">
+              <p>62,25€</p>
+              <span class="material-symbols-outlined">
+                shopping_bag
+              </span>
+            </div>
+            <div class="product-preview-star">
+              <span><i class="fa-sharp fa-solid fa-star"></i>
+              </span>
+              <span><i class="fa-sharp fa-solid fa-star"></i>
+              </span>
+              <span><i class="fa-sharp fa-solid fa-star"></i>
+              </span>
+              <span><i class="fa-sharp fa-solid fa-star-half-stroke"></i></span>
+              <span><i class="fa-regular fa-star"></i></span>
+            </div>
           </div>
-        </div>
-      </article>
-      <article class="products-sale">
-        <div class="product-image-hb-h">
-          <img class="CH" src="./assets/HB_mujer_top_3.jpg" alt="perfume-mujer">
-        </div>
-        <div class="product-text-description">
-          <div class="product-preview-icon">
-            <h4>Hugo Boss Scent</h4>
-            <span><i class="fa-sharp fa-regular fa-heart"></i></span>
+        </article>
+        <article class="products-sale">
+          <div class="product-image-hb-h">
+            <img class="CH" src="./assets/HB_hombre_top_2.jpg" alt="perfume-hombre">
           </div>
-          <div class="product-preview-description">
-            <h3>Eau de Parfum Bottled Parfum 100 ml</h3>
+          <div class="product-text-description">
+            <div class="product-preview-icon">
+              <h4>Hugo Boss</h4>
+              <span><i class="fa-sharp fa-regular fa-heart"></i></span>
+            </div>
+            <div class="product-preview-description">
+              <h3>Eau de Parfum Bottled Parfum 100 ml</h3>
+            </div>
+            <div class="product-preview-price">
+              <p>64,95€</p>
+              <span class="material-symbols-outlined">
+                shopping_bag
+              </span>
+            </div>
+            <div class="product-preview-star">
+              <span><i class="fa-sharp fa-solid fa-star"></i>
+              </span>
+              <span><i class="fa-sharp fa-solid fa-star"></i>
+              </span>
+              <span><i class="fa-sharp fa-solid fa-star"></i>
+              </span>
+              <span><i class="fa-sharp fa-solid fa-star-half-stroke"></i></span>
+              <span><i class="fa-regular fa-star"></i></span>
+            </div>
           </div>
-          <div class="product-preview-price">
-            <p>69,95€</p>
-            <span class="material-symbols-outlined">
-              shopping_bag
-            </span>
+        </article>
+        <article class="products-sale">
+          <div class="product-image-hb-h">
+            <img class="CH" src="./assets/JPG_hombre.jpg" alt="perfume-hombre">
           </div>
-          <div class="product-preview-star">
-            <span><i class="fa-sharp fa-solid fa-star"></i>
-            </span>
-            <span><i class="fa-sharp fa-solid fa-star"></i>
-            </span>
-            <span><i class="fa-sharp fa-solid fa-star"></i>
-            </span>
-            <span><i class="fa-sharp fa-solid fa-star-half-stroke"></i></span>
-            <span><i class="fa-regular fa-star"></i></span>
+          <div class="product-text-description">
+            <div class="product-preview-icon">
+              <h4>JP Gaultier Scandal</h4>
+              <span><i class="fa-sharp fa-regular fa-heart"></i></span>
+            </div>
+            <div class="product-preview-description">
+              <h3>Eau de Parfum Bottled Parfum 100 ml</h3>
+            </div>
+            <div class="product-preview-price">
+              <p>77,95€</p>
+              <span class="material-symbols-outlined">
+                shopping_bag
+              </span>
+            </div>
+            <div class="product-preview-star">
+              <span><i class="fa-sharp fa-solid fa-star"></i>
+              </span>
+              <span><i class="fa-sharp fa-solid fa-star"></i>
+              </span>
+              <span><i class="fa-sharp fa-solid fa-star"></i>
+              </span>
+              <span><i class="fa-sharp fa-solid fa-star-half-stroke"></i></span>
+              <span><i class="fa-regular fa-star"></i></span>
+            </div>
           </div>
-        </div>
-      </article>
-      <article class="products-sale">
-        <div class="product-image-hb-h">
-          <img class="CH" src="./assets/DG_mujer_top_2.jpg" alt="perfume-mujer">
-        </div>
-        <div class="product-text-description">
-          <div class="product-preview-icon">
-            <h4>D&G Queen</h4>
-            <span><i class="fa-sharp fa-regular fa-heart"></i></span>
-          </div>
-          <div class="product-preview-description">
-            <h3>Eau de Parfum Bottled Parfum 30 ml</h3>
-          </div>
-          <div class="product-preview-price">
-            <p>57,00€</p>
-            <span class="material-symbols-outlined">
-              shopping_bag
-            </span>
-          </div>
-          <div class="product-preview-star">
-            <span><i class="fa-sharp fa-solid fa-star"></i>
-            </span>
-            <span><i class="fa-sharp fa-solid fa-star"></i>
-            </span>
-            <span><i class="fa-sharp fa-solid fa-star"></i>
-            </span>
-            <span><i class="fa-sharp fa-solid fa-star-half-stroke"></i></span>
-            <span><i class="fa-regular fa-star"></i></span>
-          </div>
-        </div>
-      </article>
-      <article class="products-sale">
-        <div class="product-image-hb-h">
-          <img class="CH" src="./assets/CH_mujer_top.jpg" alt="perfume-mujer">
-        </div>
-        <div class="product-text-description">
-          <div class="product-preview-icon">
-            <h4>CH Very Good Girl</h4>
-            <span><i class="fa-sharp fa-regular fa-heart"></i></span>
-          </div>
-          <div class="product-preview-description">
-            <h3>Eau de Parfum Bottled Parfum 80 ml</h3>
-          </div>
-          <div class="product-preview-price">
-            <p>98,95€</p>
-            <span class="material-symbols-outlined">
-              shopping_bag
-            </span>
-          </div>
-          <div class="product-preview-star">
-            <span><i class="fa-sharp fa-solid fa-star"></i>
-            </span>
-            <span><i class="fa-sharp fa-solid fa-star"></i>
-            </span>
-            <span><i class="fa-sharp fa-solid fa-star"></i>
-            </span>
-            <span><i class="fa-sharp fa-solid fa-star-half-stroke"></i></span>
-            <span><i class="fa-regular fa-star"></i></span>
-          </div>
-        </div>
-      </article>
-      <article class="products-sale">
-        <div class="product-image-hb-h">
-          <img class="CH" src="./assets/JPG_mujer.jpg" alt="perfume-mujer">
-        </div>
-        <div class="product-text-description">
-          <div class="product-preview-icon">
-            <h4>JP Gaultier Scandal</h4>
-            <span><i class="fa-sharp fa-regular fa-heart"></i></span>
-          </div>
-          <div class="product-preview-description">
-            <h3>Eau de Parfum Bottled Parfum 100 ml</h3>
-          </div>
-          <div class="product-preview-price">
-            <p>67,95€</p>
-            <span class="material-symbols-outlined">
-              shopping_bag
-            </span>
-          </div>
-          <div class="product-preview-star">
-            <span><i class="fa-sharp fa-solid fa-star"></i>
-            </span>
-            <span><i class="fa-sharp fa-solid fa-star"></i>
-            </span>
-            <span><i class="fa-sharp fa-solid fa-star"></i>
-            </span>
-            <span><i class="fa-sharp fa-solid fa-star-half-stroke"></i></span>
-            <span><i class="fa-regular fa-star"></i></span>
-          </div>
-        </div>
-      </article>
-      <article class="products-sale">
-        <div class="product-image-hb-h">
-          <img class="CH" src="./assets/CH_hombre_top_3.jpg" alt="perfume-hombre">
-        </div>
-        <div class="product-text-description">
-          <div class="product-preview-icon">
-            <h4>CH 212 VIP Black</h4>
-            <span><i class="fa-sharp fa-regular fa-heart"></i></span>
-          </div>
-          <div class="product-preview-description">
-            <h3>Eau de Parfum Bottled Parfum 100 ml</h3>
-          </div>
-          <div class="product-preview-price">
-            <p>62,25€</p>
-            <span class="material-symbols-outlined">
-              shopping_bag
-            </span>
-          </div>
-          <div class="product-preview-star">
-            <span><i class="fa-sharp fa-solid fa-star"></i>
-            </span>
-            <span><i class="fa-sharp fa-solid fa-star"></i>
-            </span>
-            <span><i class="fa-sharp fa-solid fa-star"></i>
-            </span>
-            <span><i class="fa-sharp fa-solid fa-star-half-stroke"></i></span>
-            <span><i class="fa-regular fa-star"></i></span>
-          </div>
-        </div>
-      </article>
-      <article class="products-sale">
-        <div class="product-image-hb-h">
-          <img class="CH" src="./assets/HB_hombre_top_2.jpg" alt="perfume-hombre">
-        </div>
-        <div class="product-text-description">
-          <div class="product-preview-icon">
-            <h4>Hugo Boss</h4>
-            <span><i class="fa-sharp fa-regular fa-heart"></i></span>
-          </div>
-          <div class="product-preview-description">
-            <h3>Eau de Parfum Bottled Parfum 100 ml</h3>
-          </div>
-          <div class="product-preview-price">
-            <p>64,95€</p>
-            <span class="material-symbols-outlined">
-              shopping_bag
-            </span>
-          </div>
-          <div class="product-preview-star">
-            <span><i class="fa-sharp fa-solid fa-star"></i>
-            </span>
-            <span><i class="fa-sharp fa-solid fa-star"></i>
-            </span>
-            <span><i class="fa-sharp fa-solid fa-star"></i>
-            </span>
-            <span><i class="fa-sharp fa-solid fa-star-half-stroke"></i></span>
-            <span><i class="fa-regular fa-star"></i></span>
-          </div>
-        </div>
-      </article>
-      <article class="products-sale">
-        <div class="product-image-hb-h">
-          <img class="CH" src="./assets/JPG_hombre.jpg" alt="perfume-hombre">
-        </div>
-        <div class="product-text-description">
-          <div class="product-preview-icon">
-            <h4>JP Gaultier Scandal</h4>
-            <span><i class="fa-sharp fa-regular fa-heart"></i></span>
-          </div>
-          <div class="product-preview-description">
-            <h3>Eau de Parfum Bottled Parfum 100 ml</h3>
-          </div>
-          <div class="product-preview-price">
-            <p>77,95€</p>
-            <span class="material-symbols-outlined">
-              shopping_bag
-            </span>
-          </div>
-          <div class="product-preview-star">
-            <span><i class="fa-sharp fa-solid fa-star"></i>
-            </span>
-            <span><i class="fa-sharp fa-solid fa-star"></i>
-            </span>
-            <span><i class="fa-sharp fa-solid fa-star"></i>
-            </span>
-            <span><i class="fa-sharp fa-solid fa-star-half-stroke"></i></span>
-            <span><i class="fa-regular fa-star"></i></span>
-          </div>
-        </div>
-      </article>
-    </section>
+        </article>
+      </section>
+    </div>
     <section class="text-container-brands">
       <h3>Marcas</h3>
     </section>
@@ -565,6 +610,8 @@
         </div>
       </article>
     </section>
+
+
   </main>
 
   <footer>
