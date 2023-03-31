@@ -1012,6 +1012,12 @@ img {
   display: none;
 }
 
+
+.product-image-hb-h:hover {
+  transform: scale(1.1);
+  transition: transform .2s;
+}
+
 .container-columns {
   margin-top: 103px;
   display: grid;
