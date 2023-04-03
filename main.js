@@ -1,5 +1,8 @@
 // Variables Globales
 const containerParfum = document.getElementById("container-products-sale");
+const selectBrands = document.querySelector('.select-options');
+const form = document.querySelector('#form-search');
+const buttonClean = document.querySelector('#clean');
 
 // Funciones
 const parfums = [{
@@ -7,7 +10,7 @@ const parfums = [{
         brand: 'HB',
         image: './assets/HB_hombre_top_1.jpg',
         description: 'Eau de Parfum Bottled Parfum 50 ml',
-        price: 49.95,
+        price: '49.95',
     },
 
     {
@@ -15,7 +18,7 @@ const parfums = [{
         brand: 'DI',
         image: './assets/DI_hombre_top_3.jpg',
         description: 'Eau de Parfum Bottled Parfum 100 ml',
-        price: 78.00,
+        price: '78.00',
     },
 
     {
@@ -23,7 +26,7 @@ const parfums = [{
         brand: 'DG',
         image: './assets/DG_hombre_top_2.jpg',
         description: 'Eau de Parfum Bottled Parfum 50 ml',
-        price: 66.00,
+        price: '66.00',
     },
 
     {
@@ -31,7 +34,7 @@ const parfums = [{
         brand: 'DI',
         image: './assets/DI_mujer_top_3.jpg',
         description: 'Eau de Parfum Bottled Parfum 100 ml',
-        price: 80.60,
+        price: '80.60',
     },
 
 
@@ -40,7 +43,7 @@ const parfums = [{
         brand: 'DG',
         image: './assets/DG_mujer_top_1.jpg',
         description: 'Eau de Parfum Bottled Parfum 50 ml',
-        price: 68.90,
+        price: '68.90',
     },
 
     {
@@ -48,7 +51,7 @@ const parfums = [{
         brand: 'HB',
         image: './assets/HB_mujer_top_3.jpg',
         description: 'Eau de Parfum Bottled Parfum 50 ml',
-        price: 69.95,
+        price: '69.95',
     },
 
     {
@@ -56,7 +59,7 @@ const parfums = [{
         brand: 'DG',
         image: './assets/DG_mujer_top_2.jpg',
         description: 'Eau de Parfum Bottled Parfum 30 ml',
-        price: 57.00,
+        price: '57.00',
     },
 
     {
@@ -64,7 +67,7 @@ const parfums = [{
         brand: 'CH',
         image: './assets/CH_mujer_top.jpg',
         description: 'Eau de Parfum Bottled Parfum 50 ml',
-        price: 98.95,
+        price: '98.95',
     },
 
     {
@@ -72,7 +75,7 @@ const parfums = [{
         brand: 'JPG',
         image: './assets/JPG_mujer.jpg',
         description: 'Eau de Parfum Bottled Parfum 100 ml',
-        price: 67.95,
+        price: '67.95',
     },
 
     {
@@ -80,7 +83,7 @@ const parfums = [{
         brand: 'CH',
         image: './assets/CH_hombre_top_3.jpg',
         description: 'Eau de Parfum Bottled Parfum 100 ml',
-        price: 62.25,
+        price: '62.25',
     },
 
     {
@@ -88,7 +91,7 @@ const parfums = [{
         brand: 'HB',
         image: './assets/HB_hombre_top_2.jpg',
         description: 'Eau de Parfum Bottled Parfum 100 ml',
-        price: 64.95,
+        price: '64.95',
     },
 
     {
@@ -96,7 +99,7 @@ const parfums = [{
         brand: 'JPG',
         image: './assets/JPG_hombre.jpg',
         description: 'Eau de Parfum Bottled Parfum 100 ml',
-        price: 77.95,
+        price: '77.95',
     }
 ];
 
@@ -145,5 +148,59 @@ const printParfums = () => {
 
 
 
+const searchByBrand = (event) => {
+    containerParfum.innerHTML = '';
+    if (event.target.value === 'ALL') {
+        printParfums();
+    } else {
+        for (let i = 0; i < parfums.length; i++) {
+            const elementParfum = parfums[i];
+            if (elementParfum.brand === event.target.value) {
+                containerParfum.innerHTML += productTemplate(elementParfum);
+            }
+        }
+    }
+
+
+}
+
+
+const searchByPrice = (price, brand) => {
+    containerParfum.innerHTML = '';
+    console.log(price)
+    for (let i = 0; i < parfums.length; i++) {
+        const elementParfum = parfums[i];
+        if (brand === 'ALL' && (elementParfum.price < price || price === '')) {
+            containerParfum.innerHTML += productTemplate(elementParfum);
+        } else {
+
+            if ((elementParfum.price < price || price === '') && elementParfum.brand === brand) {
+                containerParfum.innerHTML += productTemplate(elementParfum);
+            }
+        }
+    }
+};
+
+
+const handleFormSearch = (event) => {
+    event.preventDefault();
+    const formElements = event.target.elements;
+    searchByPrice(formElements.price.value, formElements.brands.value);
+}
+
+const handleFormClean = (event) => {
+    console.log('holoa')
+    const resetPrice = document.querySelector('#price');
+    console.log(resetPrice);
+    resetPrice.value = '';
+    const resetSearch = document.querySelector('#brands');
+    resetSearch.value = 'ALL';
+}
+
+
+
 // Inicializador de Aplicacion
 printParfums();
+selectBrands.addEventListener('change', searchByBrand);
+form.addEventListener('submit', handleFormSearch);
+buttonClean.addEventListener('click', handleFormClean);
